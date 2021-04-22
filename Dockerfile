@@ -3,7 +3,7 @@ FROM nginx/unit:1.23.0-python3.9
 # Our Debian with Python and Nginx for python apps.
 # See https://hub.docker.com/r/nginx/unit/
 
-COPY ./app/config/config.json /docker-entrypoint.d/config.json
+COPY ./config/config.json /docker-entrypoint.d/config.json
 
 # Ok, this is something we get thanks to the Nginx Unit Image.
 # We don't need to call stuff like
